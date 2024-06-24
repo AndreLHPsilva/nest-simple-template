@@ -21,8 +21,6 @@ export class ResponseInterceptor implements NestInterceptor {
             ? data.statusHttp
             : response.statusCode || HttpStatus.OK;
 
-        response.status(statusHttp);
-
         return {
           data: data.data ?? null,
           statusHttp,
