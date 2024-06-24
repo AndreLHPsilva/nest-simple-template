@@ -15,5 +15,6 @@ import axios, { AxiosInstance } from 'axios';
       },
     },
   ],
+  exports: ['Axios'],
 })
 export class AxiosModule {}
